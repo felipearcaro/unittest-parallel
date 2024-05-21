@@ -57,8 +57,8 @@ your project.
 
 ~~~
 usage: unittest-parallel [-h] [-v] [-q] [-f] [-b] [-k TESTNAMEPATTERNS]
-                         [-s START] [-p PATTERN] [-t TOP] [-j COUNT] [-r RUNNER]
-                         [--level {module,class,test}]
+                         [-s START] [-p PATTERN] [-t TOP] [-r RUNNER]
+                         [-j COUNT] [--level {module,class,test}]
                          [--disable-process-pooling] [--coverage]
                          [--coverage-branch] [--coverage-rcfile RCFILE]
                          [--coverage-include PAT] [--coverage-omit PAT]
@@ -80,8 +80,7 @@ options:
                         Top level directory of project (defaults to start
                         directory)
   -r RUNNER, --runner RUNNER
-                        Custom unittest runner module and class (Supported: TeamCity)
-                        E.g.: `-r teamcity.unittestpy TeamcityTestRunner
+                        Custom unittest runner <module>.<class>
 
 parallelization options:
   -j COUNT, --jobs COUNT
